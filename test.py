@@ -128,14 +128,6 @@ def check_mcq_answer(questions_text, question_number, user_answer):
         return user_answer.upper() == correct_answer.upper()
     return False
 
-import os
-from google import genai
-from google.genai import types
-
-# Configure the Gemini API with your key
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyAg-UI7eAxiTI-ROU0qROR5qCZ9NUmLAK4'
-client = genai.Client()
-
 
 def get_initial_analysis(question, student_code):
     """
