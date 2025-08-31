@@ -245,8 +245,8 @@ def calculate_statistics():
     return stats
 
 
-st.set_page_config(page_title="AI Assignment System", layout="wide")
-st.title("AI-Powered Assignment System")
+st.set_page_config(page_title="AI Agent for University Assignment", layout="wide")
+st.title("AI-Agent for University Assignment")
 
 if "evaluation_results" not in st.session_state:
     st.session_state["evaluation_results"] = {}
